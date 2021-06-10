@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.one{
+    width: 100%;
+    background-color: brown;
+    text-align: center;
+
+}
+.one ul li{
+    display: inline-block;
+    position: relative;
+}
+.one ul li a{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: whitesmoke;
+    line-height: 40px;
+    transition: all linear .3s;
+    position: relative;
+
+}
+.one ul li a:hover{
+    background-color: rgb(0, 23, 128);
+
+
+
+}
+.one ul li a::after{
+    position: absolute;
+
+}
+
+.one ul li ul{
+    position: absolute;
+    width: 200px;
+    background-color:cadetblue;
+    left: -40px;
+    transition: all linear .3s;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.one ul li ul li{
+    width: 100%;
+}
+.one ul li:hover>ul{
+    visibility: visible;
+    opacity: 1;
+}
+.one ul li ul li ul{
+    left: 100%;
+    top: 50px;
+}
+.one ul li ul li:hover> ul{
+    top: 0;
+
+
+}
